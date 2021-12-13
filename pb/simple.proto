@@ -1,0 +1,18 @@
+syntax = "proto3";
+package simple;
+
+option go_package = "github.com/jhuggart/repro-reflect-failure/gen/simple";
+
+import "github.com/danielvladco/go-proto-gql/pb/graphql.proto";
+
+service SimpleService {
+  rpc GetSomething(SomeQuery) returns (SomeResponse) {
+    option (danielvladco.protobuf.graphql.rpc) = {type: QUERY};
+  };
+}
+
+message SomeQuery {
+}
+
+message SomeResponse {
+}
