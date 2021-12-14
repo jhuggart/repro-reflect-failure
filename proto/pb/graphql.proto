@@ -1,7 +1,7 @@
 syntax = "proto3";
 package danielvladco.protobuf.graphql;
 
-option go_package = "github.com/danielvladco/go-proto-gql/pb;graphql";
+option go_package = "github.com/jhuggart/repro-reflect-failure/gen/simple/pb;graphql";
 
 import "google/protobuf/descriptor.proto";
 

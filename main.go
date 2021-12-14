@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	port := 8080
+	port := 50051
 	address := fmt.Sprintf(":%d", port)
 
 	// Create gRPC server, register servers

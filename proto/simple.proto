@@ -3,7 +3,7 @@ package simple;
 
 option go_package = "github.com/jhuggart/repro-reflect-failure/gen/simple";
 
-import "github.com/danielvladco/go-proto-gql/pb/graphql.proto";
+import "pb/graphql.proto";
 
 service SimpleService {
   rpc GetSomething(SomeQuery) returns (SomeResponse) {
