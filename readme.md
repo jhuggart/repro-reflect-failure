@@ -1,5 +1,7 @@
 # Reproduce gRPC Reflection Failure
 
+**Note: protoc cmd is in `proto-gen.sh`**
+
 1. Run the server with `go run main.go`
 2. List services with `grpcurl -plaintext localhost:8080 list` - this works
 3. Try to describe `simple.SimpleService` with `grpcurl -plaintext localhost:8080 describe simple.SimpleService`
